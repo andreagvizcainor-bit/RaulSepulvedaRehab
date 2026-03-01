@@ -55,7 +55,7 @@ header {
 .hero {
     padding: 2rem;
     text-align: center;
-    background: url("../background.png") center/cover no-repeat;
+    background: url("../images/background.png") center/cover no-repeat;
     min-height: 400px;
     display: flex;
     flex-direction: column;
@@ -278,3 +278,4 @@ h1, h2, h3, h4, h5, h6, .navbar, .site-title {
     padding: 1.5rem;
   }
 }
+
