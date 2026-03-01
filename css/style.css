@@ -63,7 +63,8 @@ header {
 .hero {
     padding: 2rem;
     text-align: center;
-    background: url("../images/background.png") center/cover no-repeat;
+    background: url("/images/background.png") center/cover no-repeat;
+}
     background-size: cover;
     min-height: 400px;
     display: flex;
@@ -96,26 +97,26 @@ main {
 
 @font-face {
     font-family: "Walkway";
-    src: url("../fonts/walkway/Walkway UltraBold.ttf") format("truetype");
+    src: url("/fonts/walkway/Walkway UltraBold.ttf") format("truetype");
     font-display: swap;
 }
 
 @font-face {
     font-family: "Blacindy";
-    src: url("../fonts/blacindy/Blacindy DEMO VERSION.ttf") format("truetype");
+    src: url("/fonts/blacindy/Blacindy DEMO VERSION.ttf") format("truetype");
     font-display: swap;
 }
 
 @font-face {
     font-family: "TT Firs Neue";
-    src: url("../fonts/tt_firs_neue/tt_firs_neue_bold.ttf") format("truetype");
+    src: url("/fonts/tt_firs_neue/tt_firs_neue_bold.ttf") format("truetype");
     font-display: swap;
 }
 
 @font-face {
-    font-family: "HFHySans";
-    src: url("../fonts/hfhysans/HFHySans_Regular.ttf") format("truetype");
-    font-display: swap;
+     font-family: "HFHySans";
+    src: url("/fonts/hfhysans/HFHySans_Regular.ttf") format("truetype");
+    /* … */
 }
 
 footer {
@@ -305,4 +306,5 @@ h1, h2, h3, h4, h5, h6, .navbar, .site-title {
     padding: 1.5rem;
   }
 }
+
 
