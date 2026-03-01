@@ -1,0 +1,11 @@
+{
+  "name": "clinica-rehabilitacion",
+  "version": "1.0.0",
+  "description": "Sitio web estático para médico de Medicina Física y Rehabilitación",
+  "scripts": {
+    "start": "http-server . -c-1 -p 8080"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
