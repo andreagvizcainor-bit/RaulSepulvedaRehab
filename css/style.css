@@ -63,7 +63,7 @@ header {
 .hero {
     padding: 2rem;
     text-align: center;
-    background: url("/images/background.png") center/cover no-repeat;
+    background: url("/RaulSepulvedaRehab/images/background.png") center/cover no-repeat;
 }
     background-size: cover;
     min-height: 400px;
@@ -306,5 +306,6 @@ h1, h2, h3, h4, h5, h6, .navbar, .site-title {
     padding: 1.5rem;
   }
 }
+
 
 
