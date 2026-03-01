@@ -18,6 +18,14 @@ body {
     line-height: 1.6;
     color: var(--color-text-dark);
     background-color: var(--color-bg-light);
+    font-size: 16px; /* base size for readability */
+}
+
+/* scale text down slightly on very narrow screens */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
 }
 header {
     background-color: var(--color-header);
@@ -56,6 +64,7 @@ header {
     padding: 2rem;
     text-align: center;
     background: url("../images/background.png") center/cover no-repeat;
+    background-size: cover;
     min-height: 400px;
     display: flex;
     flex-direction: column;
@@ -64,40 +73,48 @@ header {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: 250px;
+        padding: 1.5rem;
+    }
+    .dropbtn {
+        padding: 6px 8px;
+    }
+    .dropdown-content {
+        width: 100%;
+        min-width: unset;
+    }
+}
 .ubicacion-horarios {
     padding: 2rem;
 }
 main {
     padding: 1rem;
 }
-@font-face {
-    font-family: "Sinoreta";
-    /* CSS is in css/, so go up one level to reach sinoreta/ */
-    src: url("../sinoreta/Sinoreta_PERSONAL_USE_ONLY.otf") format("opentype");
-    font-display: swap;
-}
 
 @font-face {
     font-family: "Walkway";
-    src: url("../walkway/Walkway UltraBold.ttf") format("truetype");
+    src: url("../fonts/walkway/Walkway UltraBold.ttf") format("truetype");
     font-display: swap;
 }
 
 @font-face {
     font-family: "Blacindy";
-    src: url("../blacindy/Blacindy DEMO VERSION.ttf") format("truetype");
+    src: url("../fonts/blacindy/Blacindy DEMO VERSION.ttf") format("truetype");
     font-display: swap;
 }
 
 @font-face {
     font-family: "TT Firs Neue";
-    src: url("../tt_firs_neue/tt_firs_neue_bold.ttf") format("truetype");
+    src: url("../fonts/tt_firs_neue/tt_firs_neue_bold.ttf") format("truetype");
     font-display: swap;
 }
 
 @font-face {
     font-family: "HFHySans";
-    src: url("../hfhysans/HFHySans_Regular.ttf") format("truetype");
+    src: url("../fonts/hfhysans/HFHySans_Regular.ttf") format("truetype");
     font-display: swap;
 }
 
@@ -111,13 +128,18 @@ footer {
 
 h1, h2, h3, h4, h5, h6, .navbar, .site-title {
     font-family: "Walkway", sans-serif;
+    font-style: normal;
 }
+
 
 .site-title {
     font-family: "TT Firs Neue", Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    font-weight: bold;
+    font-style: normal;
 }
+
 
 @media (max-width: 600px) {
     .nav-links {
@@ -134,7 +156,10 @@ h1, h2, h3, h4, h5, h6, .navbar, .site-title {
   display: inline-block;
   padding: 8px 10px;
   border-radius: 10px;
+  font-weight: bold;
+  font-style: normal;
 }
+
 
 .dropbtn:hover { background: rgba(255,255,255,0.15); }
 
@@ -168,6 +193,8 @@ h1, h2, h3, h4, h5, h6, .navbar, .site-title {
   white-space: nowrap;
   color: var(--color-text-dark);
   text-decoration: none;
+  font-weight: bold;
+  font-style: normal;
 }
 
 .submenu-trigger:hover { 
